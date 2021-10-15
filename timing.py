@@ -7,7 +7,7 @@ def calculate_time(delay):
     """
     initial_time = time.time()
     # Any other actions would go here to get an accurate measurement of how long this function takes.
-    time.sleep(delay)
+    time.sleep(int(delay))
     final_time = time.time()
     X = final_time - initial_time
     print(f"Total time {X}")
