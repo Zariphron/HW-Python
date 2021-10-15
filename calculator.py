@@ -1,21 +1,23 @@
+def parse_input():
+    user_input = input("Enter equation: ")
+    user_input = user_input.split(" ")
+    calculator(float(user_input[0]), float(user_input[2]), user_input[1])
+
 def calculator(number1, number2, operator):
     result = 0
-    if ((type(number1) not float or int) or (type(number2) not float or int)):
-        False
-    if (operator is "+"):
+    if (operator == "+"):
         result = number1 + number2
-    if (operator is "-"):
+    if (operator == "-"):
         result = number1 - number2
-    if (operator is "*"):
+    if (operator == "*"):
         result = number1 * number2
-    if (operator is "/"):
+    if (operator == "/"):
         result = number1 / number2
-    if (operator is "//"):
-        result = 
-    if (operator is "**"):
-        result = 
+    if (operator == "//"):
+        result = number1 // number2
+    if (operator == "**"):
+        result = number1 ** number2
     else:
         False
 
-def parse_input():
-    something
+parse_input()
